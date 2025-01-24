@@ -53,6 +53,17 @@ answerForm.addEventListener('submit', (e) => {
     return;
   }
 
+  // Has Publisher Address but no publisher
+  if ((publisherAddress && !publisher)) {
+    alert('Publisher Address is required!');
+    return;
+  // Has Publisher but no address
+  } else if ((!publisherAddress && publisher)) {
+    alert('Publisher is required!');
+    return;
+  }
+
+
   const formattedDetails = FormatDetails({
     title,
     author,
