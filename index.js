@@ -48,8 +48,8 @@ answerForm.addEventListener('submit', (e) => {
   const publisherAddress = getById('publisherAddress');
   const link = getById('link');
 
-  if (!author && !yearPublished) {
-    alert('No answer provided');
+  if (!author && !yearPublished && !title) {
+    alert('Author, Year Published, and Title are required!');
     return;
   }
 
