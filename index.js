@@ -44,7 +44,7 @@ answerForm.addEventListener('submit', (e) => {
   const title = getById('title');
   const author = getById('author');
   const yearPublished = getById('yearPublished');
-  const publisher = getById('yearPublished');
+  const publisher = getById('publisher');
   const publisherAddress = getById('publisherAddress');
   const link = getById('link');
 
